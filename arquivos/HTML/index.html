@@ -10,22 +10,13 @@
 </head>
 <body>
         <header id="header">
-            <button onclick="menu" class="btn_header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-            </button>
             <div class="logo_header">
                 <figure>
                     <img  class="img_logo" src="../MIDIAS/logo/logo.png" alt="logo">
                 </figure>
             </div>
             <section class="navigation" id="navigation">
-                <button class="btn_header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                </button>
+               
                 <a href="#">Home</a>
                 <a href="#">Sobre nós</a>
                 <a href="#">Contatos</a>
@@ -33,10 +24,36 @@
         </header>
 
         <main id="content">
-            <h1>Meu responsivel</h1>
-            <section>
+          
+            <section class="conteudo_produto">
                 
+                <button id="prev_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                      </svg>
+                </button>
+
+                <figure class="img_produto">
+                    <img src="../MIDIAS/produto/1.png" alt="" class="slider">
+                    <img src="../MIDIAS/produto/2.png" alt="" class="slider">
+                    <img src="../MIDIAS/produto/3.png" alt="" class="slider">
+                </figure>
+
+                <button id="nex_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                      </svg>
+                </button>
+            </section>
+
+            <section>
+              
             </section>
         </main>
+      <script>
+        const slider =document.querySelectorAll('.slider');
+        const btnprev = document.getElementById('prev_button')
+        const btnnext = document.ge
+      </script>
 </body>
 </html>

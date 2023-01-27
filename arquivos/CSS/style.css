@@ -55,39 +55,50 @@
    padding: 10px;
    border-radius: 10px;
   }
+
  main{
+   display: flex;
    background-color: var(--color-white);
    text-align: center;
    padding-top: 5em;
    height: 100vh;
    transition: 1s;
  }
- .btn_header{
-   display: none;
-   background-color: transparent;
+ .conteudo_produto{
+   display:flex;
+   align-items: center;
+   margin: 0 auto;
+   padding: 50px;
+   width: 800px;
+   height: 400px;
+   background-color: var(--bg-color);
+   border-radius: 20px;
+ }
+ .img_produto{
+   margin: 0 auto;
+ }
+ .img_produto img{
+   width: 400px;
+ }
+ #prev_button, #nex_button{
+   width: 30px;
+   height: 30px;
    border: none;
-   color: var(--color-white);
+   background-color: var(--color-h1);
    cursor: pointer;
+   border-radius: 10px;
  }
- @media screen and (max-width: 768px){
-   .btn_header{
-      display: block;
-   }
-   .navigation{
-      position: absolute;
-      flex-direction: column;
-      top: 0;
-      background-color:var(--bg-color3) ;
-      height: 100%;
-      width: 35vw;
-      padding: 1em;
-      animation-duration: 1s;
-      margin-left: -100vw;
-   }
+ #prev_button img, #nex_button img{
+   width: 100%;
+   height: 100%;
  }
- @keyframes showsidebar {
-   from {margin-left: -100vw;}
-   top  {margin-left: -10vw;}
- }
-   
- 
+.slider{
+   opacity: 0;
+   transform: opacity .2s;
+   position: relative;
+   width: 100%;
+   border: 10px;
+}
+.on{
+   opacity: 1;
+}
