@@ -50,12 +50,13 @@
    transition: 1s;
    font-weight: bold;
   }
-  .active{
+  .navigation a:hover{
    background-color:var(--bg-color3) ;
    padding: 10px;
    border-radius: 10px;
   }
  main{
+   background-color: var(--color-white);
    text-align: center;
    padding-top: 5em;
    height: 100vh;
