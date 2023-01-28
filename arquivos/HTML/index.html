@@ -50,10 +50,22 @@
               
             </section>
         </main>
-      <script>
+      <script defer>
         const slider =document.querySelectorAll('.slider');
-        const btnprev = document.getElementById('prev_button')
-        const btnnext = document.ge
+        const btnprev = document.getElementById('prev_button');
+        const btnnext = document.getElementById('next_button');
+
+        let currentSlide = 0;
+
+        function hideSlide(){
+            slider.forEach(item => item.classList.remove('on'))
+        }
+
+        function showslider () {
+            slider[currentSlide].classList.add('on')
+        }
+
+        btnNext.addEventListener('click', () => console.log('clicado'))
       </script>
 </body>
 </html>
