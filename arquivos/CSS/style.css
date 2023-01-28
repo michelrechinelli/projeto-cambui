@@ -20,6 +20,10 @@
 :root{
  --color-black: #000000;
 }
+
+:root{
+ --color-orange: #ffae00;
+}
   *{
    margin: 0;
    padding: 0;
