@@ -24,6 +24,9 @@
 :root{
  --color-orange: #ffae00;
 }
+:root{
+ --color-gren: #006900;
+}
   *{
    margin: 0;
    padding: 0;
